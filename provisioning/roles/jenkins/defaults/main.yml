@@ -1,0 +1,3 @@
+certbot_email: info@test-domain.com
+certbot_hosts:
+  - jenkins.test-domain.com

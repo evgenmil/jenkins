@@ -1,0 +1,12 @@
+---
+-   name: Add OpenJDK PPA for Java 21
+    apt_repository:
+      repo: ppa:openjdk-r/ppa
+      state: present
+      update_cache: yes
+
+-   name: Install OpenJDK 21
+    apt:
+      name: openjdk-21-jdk
+      state: present
+      update_cache: yes
