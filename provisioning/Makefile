@@ -1,5 +1,9 @@
-server:
-	ansible-playbook -i hosts.yml server.yml
+server: manager agent
+
+manager:
+	ansible-playbook -i hosts.yml manager.yml
+agent:
+	ansible-playbook -i hosts.yml agent.yml
 
 authorize:
 	ansible-playbook -i hosts.yml authorize.yml
